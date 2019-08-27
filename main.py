@@ -44,13 +44,10 @@ def hello():
     hits = str(int(hits) + 1)
     r.set('hits', hits)
 
-    btnContent = '修改我的代码'
-    body = '恭喜您成功发布了Python项目... 啊！word 拼写错误，尝试修改代码解决这个问题吧。'
+    btnContent = '打我啊笨'
+    body = '小胖子你傻吧谁叫你建立袜子商店啦'
 
-    if msg != 'Hello, word!':
-        btnContent = '搭建我的袜子电商网站'
-        body = '恭喜您成功修复了代码！您可以通过创建一个袜子电商网站来体验行云趣码一站式开发平台更浩瀚的功能。'
-        envURL = 'http://help.cloudtogo.cn/tutorial/55b67d34-141d-11e7-93ae-92361f002671.html'
+   
 
     return render_template('hello.html', Hits=hits, Body=body, WebIDE=envURL, Msg=msg, ButtonContent=btnContent)
 
