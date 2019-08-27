@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/image/cloud.ico">
+    <title>Python</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/jumbotron.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">本页面被访问了{{ Hits }}次</a>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <div class="container">
+      	<h1>{{ Msg }}</h1>
+        <p>{{ Body }}</p>
+        <p><a class="btn btn-primary btn-lg" href="{{ WebIDE }}" target="view_window" role="button"> {{ ButtonContent }} &raquo;</a></p>
+      </div>
+    </div>
+  </body>
+</html>
