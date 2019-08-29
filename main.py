@@ -24,7 +24,7 @@ sys.setdefaultencoding('utf8')
 ## 错误在这里 ___
 #              |
 #              V
-msg = '小胖子喜欢刘能，东东喜欢小胖妞'
+msg = 'hello world'
 
 ################################################################################
 
@@ -44,8 +44,8 @@ def hello():
     hits = str(int(hits) + 1)
     r.set('hits', hits)
 
-    btnContent = '打我啊笨'
-    body = '小胖子你傻吧谁叫你建立袜子商店啦'
+    btnContent = 'somthing'
+    body = 'i love the company'
 
    
 
